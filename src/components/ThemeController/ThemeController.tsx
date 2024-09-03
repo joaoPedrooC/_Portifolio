@@ -6,7 +6,7 @@ import { MdOutlineWbSunny } from "react-icons/md"
 import { FaRegMoon } from "react-icons/fa"
 
 export const ThemeController = () => {
-  const [themePreference, setThemePreference] = useState<null | string>(localStorage.getItem('@theme') || null);
+  const [themePreference, setThemePreference] = useState<string>(localStorage.getItem('@theme') || 'l');
   const [animation, setAnimation] = useState<boolean>(false)
   
   useEffect(() => {
