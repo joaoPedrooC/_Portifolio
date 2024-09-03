@@ -35,6 +35,7 @@ export const BannerSection = () => {
 
           <IoIosArrowDown className={`${styles.banner__arrow}`}/>
         </div>
+        
         <Suspense fallback={<Loader />}>
           <Avatar  />
         </Suspense>
