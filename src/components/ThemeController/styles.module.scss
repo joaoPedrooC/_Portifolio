@@ -1,0 +1,18 @@
+.theme__controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: .3rem .4rem;
+  
+  border-radius: 100%;
+  background-color: var(--light-yellow);
+}
+
+.hidden {
+  display: none;
+}
+
+.animation {
+  animation: spin .8s ease;
+}
