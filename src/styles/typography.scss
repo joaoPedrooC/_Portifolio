@@ -1,6 +1,7 @@
 .page__title {
   font-size: clamp(1.5rem, 5vw, 2rem);
   font-weight: 500;
+  color: var(--font-color-2);
 }
 
 .section__title {
@@ -16,7 +17,7 @@
   }
 
   &.text__big--2 {
-    font-size: clamp(.8rem, 5vw, 20pzx);
+    font-size: clamp(.8rem, 5vw, 1.25rem);
   }
 
   &.text__medium {

@@ -3,6 +3,7 @@
 
   --font-color-1: #212529;
   --font-color-2: #212529;
+  --images-color: #212529;
 
   --light-yellow: #FBF5DF;
   --color-blue: #1864ab;
@@ -10,8 +11,9 @@
 
 :root.dark-mode {
   --background-color: #212529;
-
+  
   --font-color-2: #DEE2E6;
+  --images-color: #F1F3F5;
 }
 
 body {
