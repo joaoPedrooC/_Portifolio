@@ -8,7 +8,7 @@ export const CustomSelect = () => {
   const ref = useRef<HTMLDivElement>(null)
 
   const changeInputValue = () => {
-    const checkedInput = document.querySelector('input[type="radio"]:checked')
+    // const checkedInput = document.querySelector('input[type="radio"]:checked')
   }
 
   return (
