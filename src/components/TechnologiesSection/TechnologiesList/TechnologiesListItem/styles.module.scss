@@ -1,0 +1,13 @@
+.item__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3125rem;
+
+  & > svg {
+    height: clamp(30px, 8vw, 100px);
+    width: clamp(30px, 8vw, 100px);
+
+    color: var(--images-color);
+  }
+}

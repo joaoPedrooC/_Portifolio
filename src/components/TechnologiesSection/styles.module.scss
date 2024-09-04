@@ -1,0 +1,11 @@
+.technologies__section {
+  padding-top: 5rem;
+  min-height: 100vh;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+}

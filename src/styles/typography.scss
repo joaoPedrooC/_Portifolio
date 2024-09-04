@@ -25,11 +25,11 @@
   }
 
   &.text__small--1 {
-    font-size: clamp(0.6rem, 2vw, 16px);
+    font-size: clamp(0.6rem, 2vw, 1rem);
   }
 
-  &.text__small-2 {
-    font-size: clamp(.6rem, 2vw, .7rem);
+  &.text__small--2 {
+    font-size: clamp(0.6rem, 2vw, 0.7rem);
   }
 }
 

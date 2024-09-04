@@ -14,7 +14,7 @@ export const CustomSelect = () => {
   return (
     <div className={styles.select__container} ref={ref}>
       <GiBrazil />
-      <span className='text text__small-2'>PT</span>
+      <span className='text text__small--2'>PT</span>
       <IoIosArrowDown />
 
         <form onInput={() => changeInputValue()} className={styles.select__optionsContainer}>
