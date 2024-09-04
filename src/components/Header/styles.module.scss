@@ -16,6 +16,10 @@
     justify-content: end;
     height: 100%;
   }
+
+  animation: .5s linear show;
+
+  transition: all ease 1s;
 }
 
 // Início estilização header Mobile *********
@@ -119,6 +123,8 @@
   border-radius: 8px;
 
   pointer-events: none;
+
+  box-shadow: 0 0 16px 0px var(--font-color-1);
 }
 
 .header__mobile > ul {
@@ -280,5 +286,14 @@
   }
   100% {
     width: 60%;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

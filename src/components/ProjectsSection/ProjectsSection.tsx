@@ -1,4 +1,3 @@
-import { PiMouseLeftClickLight, PiMouseLight } from 'react-icons/pi'
 import styles from './styles.module.scss'
 import { TbHandClick, TbHandFinger } from 'react-icons/tb'
 

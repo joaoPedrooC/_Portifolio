@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 import styles from './styles.module.scss'
 
@@ -24,8 +24,31 @@ export const Header = () => {
     setOpen(prevState => !prevState)
   }
 
+  const headerRef = useRef<HTMLHeadElement>(null)
+  let scrollHeight = 0
+
+  const handleScroll = () => {
+    let currentScrollHeight = window.scrollY
+  
+    if(currentScrollHeight > scrollHeight) {
+      headerRef.current!.style.opacity = "0"
+      headerRef.current!.style.width = "200%"
+      scrollHeight = currentScrollHeight
+    } else {
+      headerRef.current!.style.width = "100%"
+      headerRef.current!.style.opacity = "1"
+      scrollHeight = currentScrollHeight
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true })
+
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <header className={styles.header__container}>
+    <header className={styles.header__container} ref={headerRef}>
       <div className="container">
 
         {/* Esqueleto do header mobile */}
