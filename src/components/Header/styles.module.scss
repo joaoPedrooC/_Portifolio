@@ -139,6 +139,10 @@
   & > li, & > div > div, & a {
     pointer-events: all;
   }
+
+  @media (width >= 1020px) {
+    display: none;
+  }
 }
 
 // Início da estilização header Desktop *********
