@@ -1,0 +1,53 @@
+.about__section {
+  position: relative;
+  padding: 6rem 0;
+
+  & > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    text-indent: 1.5625rem;
+
+    gap: 2rem;
+
+    & > button {
+      background-color: transparent;
+      
+      width: clamp(100px, 50vw, 400px);
+      padding: 1rem .3rem;
+      
+      border-radius: 8px;
+      border: 1px solid var(--font-color-1);
+      
+      transition: .6s;
+      cursor: pointer;
+      
+      color: var(--font-color-1);
+
+      &:hover {
+        background-color: var(--font-color-1);
+        color: var(--light-yellow);
+      }
+    }
+  }
+}
+
+.about__sectionBackground {
+  position: absolute;
+
+  left: -250%;
+  top: 100px;
+
+  width: 500%;
+  height: 100%;
+
+  background-color: var(--light-yellow);
+
+  transform: rotate(-8deg);
+
+  z-index: -1;
+}

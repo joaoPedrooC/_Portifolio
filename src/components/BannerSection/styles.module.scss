@@ -18,6 +18,8 @@
 
       gap: 1rem;
       width: clamp(250px, 45vw, 37.5rem);
+
+      z-index: 1;
     }
 
     @media (width >= 750px) {

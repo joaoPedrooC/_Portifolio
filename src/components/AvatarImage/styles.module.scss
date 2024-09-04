@@ -3,11 +3,9 @@
   right: inherit;
   top: 0;
 
-  z-index: -1;
-
   opacity: 80%;
 
-  height: calc(100vh + 150px);
+  height: calc(100vh + 100px);
 
   @media (width >= 750px) {
     right: 2rem;

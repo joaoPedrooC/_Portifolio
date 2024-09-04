@@ -10,7 +10,7 @@
 }
 
 :root.dark-mode {
-  --background-color: #212529;
+  --background-color: #011222;
   
   --font-color-2: #DEE2E6;
   --images-color: #F1F3F5;
@@ -18,4 +18,5 @@
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
