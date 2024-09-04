@@ -1,0 +1,73 @@
+.projects__section {
+  position: relative;
+
+  min-height: 100vh;
+
+  margin-top: 6rem;
+  padding-block: 3rem;
+}
+
+.projects__sectionBackground {
+  position: absolute;
+  top: 0;
+  left: -250%;
+
+  background-color: var(--light-yellow);
+
+  width: 500%;
+  height: 100%;
+
+  z-index: -1;
+
+  transform: rotate(-6deg);
+}
+
+.mouse, .mouse__click {
+  position: absolute;
+  top: 5rem;
+  right: clamp(2rem, 5vw, 5rem);
+
+  height: clamp(4rem, 20vw, 6.25rem);
+  width: clamp(4rem, 20vw, 6.25rem);
+
+  @media (width >= 240px) {
+    top: 0;
+  }
+
+  @media (width >= 600px) {
+    top: -3rem;
+  }
+}
+
+.mouse {
+  animation: twinkle .8s linear infinite;
+}
+
+.mouse__click {
+  animation: twinkle-reverse .8s linear infinite;
+  animation-delay: .8s;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes twinkle-reverse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

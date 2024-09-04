@@ -4,6 +4,7 @@
 
   width: 100%;
   max-width: 100vw;
+
   & > div:first-child {
     display: flex;
     flex-direction: column;
@@ -49,7 +50,7 @@
 
   background-color: var(--light-yellow);
 
-  transform: rotate(-8deg);
+  transform: rotate(-6deg);
 
   z-index: -1;
 }
