@@ -15,21 +15,21 @@ export const BannerSection = () => {
     <section className={styles.banner__section}>
       <div className="container">
         <div>
-          <h1 className='page__title font__alternative'>Desenvolvedor Full Stack</h1>
-          <p className='text text__big--1 font__alternative'>
+          <h1 className='page__title font__alternative animate__animated animate__fadeInLeft'>Desenvolvedor Full Stack</h1>
+          <p className='text text__big--1 font__alternative animate__animated animate__fadeInLeft'>
             Obtendo experiência em desenvolvimento web full stack
             há mais de 1 ano por meio de projetos pessoais, focado 
             na evolução e buscando novos conhecimentos.
           </p>
-          <div className={styles.banner__links}>
+          <div className={`${styles.banner__links} animate__animated animate__fadeInLeft`}>
             <a href="https://www.linkedin.com/in/joaopedrocorreia-/" target='_blank'>
-              <FaLinkedin />
+              <FaLinkedin className='animate__animated animate__pulse animate__infinite'/>
             </a>
             <a href="https://www.instagram.com/joaopedro9429/" target='_blank'>
-              <FaInstagram />
+              <FaInstagram className='animate__animated animate__pulse animate__infinite' style={{ animationDelay: ".3s" }}/>
             </a>
             <a href="https://github.com/joaoPedrooC" target='_blank'>
-              <FaGithub />
+              <FaGithub className='animate__animated animate__pulse animate__infinite animate__delay-3s' style={{ animationDelay: ".5s" }}/>
             </a>
           </div>
 
