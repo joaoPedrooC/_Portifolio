@@ -44,7 +44,7 @@ export const Header = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true })
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll, { capture: true })
   }, [])
 
   return (
