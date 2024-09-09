@@ -7,6 +7,7 @@ import { AboutSection } from './components/AboutSection/AboutSection'
 import { TechnologiesSection } from './components/TechnologiesSection/TechnologiesSection'
 import { ProjectsSection } from './components/ProjectsSection/ProjectsSection'
 import { AchievementsSection } from './components/AchievementsSection/AchievementsSection'
+import { ContactSection } from './components/ContactSection/ContactSection'
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
       <TechnologiesSection />
       <ProjectsSection />
       <AchievementsSection />
+      <ContactSection />
     </DefaultTemplate>
   )
 }

@@ -50,10 +50,14 @@
 
   width: 500%;
   height: clamp(105%, 80vw, 120%);
-
+  
   z-index: -1;
-
+  
   transform: rotate(-6deg);
+
+  @media (width >= 700px) {
+    max-height: 1100px;
+  }
 }
 
 .mouse, .mouse__click {
