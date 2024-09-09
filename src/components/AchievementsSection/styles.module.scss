@@ -1,0 +1,10 @@
+.achievements__section {
+  margin-top: clamp(8rem, 15vw, 12rem);
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+}

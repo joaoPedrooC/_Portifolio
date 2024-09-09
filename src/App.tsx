@@ -6,6 +6,7 @@ import { BannerSection } from './components/BannerSection/BannerSection'
 import { AboutSection } from './components/AboutSection/AboutSection'
 import { TechnologiesSection } from './components/TechnologiesSection/TechnologiesSection'
 import { ProjectsSection } from './components/ProjectsSection/ProjectsSection'
+import { AchievementsSection } from './components/AchievementsSection/AchievementsSection'
 
 export const App = () => {
   return (
@@ -14,6 +15,7 @@ export const App = () => {
       <AboutSection />
       <TechnologiesSection />
       <ProjectsSection />
+      <AchievementsSection />
     </DefaultTemplate>
   )
 }
