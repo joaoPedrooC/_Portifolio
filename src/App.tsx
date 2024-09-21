@@ -9,6 +9,8 @@ import { ProjectsSection } from './components/ProjectsSection/ProjectsSection'
 import { AchievementsSection } from './components/AchievementsSection/AchievementsSection'
 import { ContactSection } from './components/ContactSection/ContactSection'
 
+import './i18n'
+
 export const App = () => {
   return (
     <DefaultTemplate>

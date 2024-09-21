@@ -1,4 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import styles from './styles.module.scss'
 
@@ -14,6 +15,8 @@ export const BannerSection = () => {
   const [visible, setVisible] = useState<boolean>(false)
   const bannerRef = useRef<HTMLDivElement>(null)
 
+  const { t } = useTranslation()
+
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
     if (entry.isIntersecting) {
       setVisible(true)
@@ -28,11 +31,9 @@ export const BannerSection = () => {
     <section className={styles.banner__section}>
       <div className="container" ref={bannerRef}>
         <div>
-          <h1 className={`page__title font__alternative ${visible? 'animate__animated animate__fadeInLeft' : ''}`}>Desenvolvedor Full Stack</h1>
+          <h1 className={`page__title font__alternative ${visible? 'animate__animated animate__fadeInLeft' : ''}`}>{ t('banner__title') }</h1>
           <p className={`text text__big--1 font__alternative ${visible ? 'animate__animated animate__fadeInLeft' : ''}`}>
-            Obtendo experiência em desenvolvimento web full stack
-            há mais de 1 ano por meio de projetos pessoais, focado 
-            na evolução e buscando novos conhecimentos.
+            {t('banner__text')}
           </p>
           <div className={`${styles.banner__links} ${visible ? 'animate__animated animate__fadeInLeft' : ''}`}>
             <a href="https://www.linkedin.com/in/joaopedrocorreia-/" target='_blank'>
