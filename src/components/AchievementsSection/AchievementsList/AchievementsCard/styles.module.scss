@@ -32,10 +32,13 @@
     }
   }
 
-  & button {
+  & a {
     background-color: transparent;
 
     padding: 1rem 2rem;
+    width: 90%;
+
+    text-align: center;
 
     border: 1px solid var(--font-color-2);
     border-radius: 8px;
@@ -47,9 +50,7 @@
     &:hover {
       background-color: var(--scroll-color);
 
-      & > a {
-        color: var(--links-color);
-      }
+      color: var(--links-color);
     }
   }
 }

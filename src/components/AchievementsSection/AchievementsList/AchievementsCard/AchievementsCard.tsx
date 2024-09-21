@@ -29,7 +29,7 @@ export const AchievementsCard = ({ achievement }: IAchievementsCardProps) => {
       </div>
       <div>
         <p className='text text__small--1 font__alternative'>{achievement.achievementDescription}</p>
-        { achievement.buttonContent && <button><a href={achievement.buttonUrl} target='_blank' className='text__bold font__alternative'>{achievement.buttonContent}</a></button> }
+        { achievement.buttonContent && <a href={achievement.buttonUrl} target='_blank' className='text__bold font__alternative'>{achievement.buttonContent}</a> }
       </div>
     </li>
   )
