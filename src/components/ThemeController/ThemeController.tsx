@@ -20,18 +20,21 @@ export const ThemeController = () => {
   const setTheme = () => {
     setAnimation(true)
     
-    setTimeout(() => { // Timeout para animação rodar
-      if(themePreference == 'd') {
-        localStorage.setItem('@theme', 'l')
-        setThemePreference('l')
-      } else {
-        localStorage.setItem('@theme', 'd')
-        setThemePreference('d')
-      }
-    }, 300)
+    if(themePreference == 'd') {
+      localStorage.setItem('@theme', 'l')
+      setThemePreference('l')
+    } else {
+      localStorage.setItem('@theme', 'd')
+      setThemePreference('d')
+    }
 
-    setAnimation(false)
+    setTimeout(() => { // Timeout para animação rodar
+      setAnimation(false)
+    }, 1000)
   }
+
+  console.log(animation);
+  
 
   return (
     <div className={`${styles.theme__controller} ${animation ? styles.animation : ''}`} onClick={setTheme}>

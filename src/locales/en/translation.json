@@ -4,5 +4,7 @@
 
   "about__text--1": "Web developer passionate about studying programming logic, I started my studies in C++ at the end of 2021, language wich I keep learning due it's complexity. Throughout my journey, I joined programming courses and marathons that helped me developing my knowledge. Today, I am taking Computer Science, with graduation scheduled for 2026.",
   "about__text--2": "In 2024, I started studying at Kenzie Academy Brasil, where I've learned many technologies and 'soft skills'. I also had the oportunity to act as a Full Stack Monitor, helping other students from the course with their tasks and assignments. Since then, I've been doing personal projects as a way of practicing the technologies I learned and evolve even more.",
-  "about__button": "Download CV"
+  "about__button": "Download CV",
+
+  "technologies__title": "Technologies"
 }
