@@ -1,29 +1,27 @@
-import { useRef } from 'react'
-import styles from './styles.module.scss'
-
-import { GiBrazil } from "react-icons/gi";
-import { IoIosArrowDown } from "react-icons/io";
+import { ChangeEvent } from 'react'
 import i18n from '../../i18n';
 
+import { IoIosArrowDown } from 'react-icons/io';
+import { IoLanguage } from 'react-icons/io5';
+
+import styles from './styles.module.scss'
+
 export const CustomSelect = () => {
-  const ref = useRef<HTMLDivElement>(null)
-
-  const changeInputValue = (e: any) => {
-    const lang: string = e.target.value
-
-    i18n.changeLanguage(lang.toLowerCase())
+  const changeInputValue = (e: ChangeEvent<HTMLInputElement>) => {
+    i18n.changeLanguage(e.target!.value)
+    document.querySelectorAll('#lang').forEach(lang => lang.innerHTML = e.target!.value.toUpperCase())
   }
 
   return (
-    <div className={styles.select__container} ref={ref}>
-      <GiBrazil />
-      <span className='text text__small--2'>PT</span>
+    <div className={styles.select__container}>
+      <IoLanguage />
+      <span className='text text__small--2' id='lang'>{i18n.language.toUpperCase()}</span>
       <IoIosArrowDown />
 
-        <form onInput={(e) => changeInputValue(e)} className={styles.select__optionsContainer}>
-          <input type="radio" name="languageValue" id="PT" value="pt" />
+        <form className={styles.select__optionsContainer}>
+          <input type="radio" name="languageValue" id="PT" value="pt" onChange={changeInputValue} />
           <label htmlFor="PT" className='text text__small-1 font__black'>Português</label>
-          <input type="radio" name="languageValue" id="EN" value="en" />
+          <input type="radio" name="languageValue" id="EN" value="en" onChange={changeInputValue} />
           <label htmlFor="EN" className='text text__small-1 font__black'>English</label>
         </form>
       </div>
