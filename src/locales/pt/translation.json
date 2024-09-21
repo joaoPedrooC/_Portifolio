@@ -1,4 +1,11 @@
 {
+  "header__beginning": "Inicio",
+  "header__about": "Sobre mim",
+  "header__techs": "Tecnologias",
+  "header__projects": "Projetos",
+  "header__achievements": "Conquistas",
+  "header__contact": "Contato",
+
   "banner__title": "Desenvolvedor Full Stack",
   "banner__text": "Obtendo experiência em desenvolvimento web full stack há mais de 1 ano por meio de projetos pessoais, focado na evolução e buscando novos desafios.",
 

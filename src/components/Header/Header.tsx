@@ -1,13 +1,17 @@
 import { useEffect, useRef, useState } from 'react'
-
-import styles from './styles.module.scss'
+import { useTranslation } from 'react-i18next'
 
 import { CustomSelect } from '../CustomSelect/CustomSelect'
 import { ThemeController } from '../ThemeController/ThemeController'
+import { HeaderMock } from '../../services/HeaderMock'
+
+import styles from './styles.module.scss'
 
 export const Header = () => {
   const [open, setOpen] = useState<boolean>(false)
   const [closing, setClosing] = useState<boolean>(false)
+
+  const { t } = useTranslation()
 
   const handleOpenModal = () => {
     setClosing(prevState => !prevState && open)
@@ -57,24 +61,11 @@ export const Header = () => {
         </div>
         <nav className={`${styles.header__mobile} ${open ? styles.modal__open : ''}`}>
           <ul>
-            <li>
-              <a className='text text__small--1 font__black' href="">Início</a>
-            </li>
-            <li>
-              <a className='text text__small--1 font__black' href="">Sobre mim</a>
-            </li>
-            <li>
-              <a className='text text__small--1 font__black' href="">Tecnologias</a>
-            </li>
-            <li>
-              <a className='text text__small--1 font__black' href="">Projetos</a>
-            </li>
-            <li>
-              <a className='text text__small--1 font__black' href="">Conquistas</a>
-            </li>
-            <li>
-              <a className='text text__small--1 font__black' href="">Contato</a>
-            </li>
+            { HeaderMock.map(li => (
+              <li>
+                <a className='text text__small--1 font__black' href={li.href} key={li.sectionName}>{t(li.sectionName)}</a>
+              </li>
+            )) }
           </ul>
 
           <div className={styles.desktop__options}>
@@ -86,24 +77,11 @@ export const Header = () => {
         {/* Esqueleto do header desktop */}
         <nav className={styles.header__desktop}>
           <ul>
-            <li className={styles.desktop__headerLi}>
-              <a className='text text__small--1 font__alternative' href="">Início</a>
-            </li>
-            <li className={styles.desktop__headerLi}>
-              <a className='text text__small--1 font__alternative' href="">Sobre mim</a>
-            </li>
-            <li className={styles.desktop__headerLi}>
-              <a className='text text__small--1 font__alternative' href="">Tecnologias</a>
-            </li>
-            <li className={styles.desktop__headerLi}>
-              <a className='text text__small--1 font__alternative' href="">Projetos</a>
-            </li>
-            <li className={styles.desktop__headerLi}>
-              <a className='text text__small--1 font__alternative' href="">Conquistas</a>
-            </li>
-            <li className={styles.desktop__headerLi}>
-              <a className='text text__small--1 font__alternative' href="">Contato</a>
-            </li>
+            { HeaderMock.map(li => (
+              <li className={styles.desktop__headerLi}>
+                <a className='text text__small--1 font__alternative' href={li.href} key={li.sectionName}>{t(li.sectionName)}</a>
+              </li>
+            )) }
           </ul>
 
           <div className={styles.desktop__options}>
