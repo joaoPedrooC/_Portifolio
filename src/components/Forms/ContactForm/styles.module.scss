@@ -1,0 +1,30 @@
+.contact__formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 35.0625rem;
+  max-width: 100%;
+
+  gap: 1.625rem;
+}
+
+.contact__formContainer > button {
+  max-width: 400px;
+  width: 100%;
+
+  border-radius: 18px;
+  padding: 1rem;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+
+  background-color: transparent;
+  border: 1px solid var(--font-color-1);
+
+  &:hover {
+    background-color: var(--font-color-1);
+    color: var(--light-yellow);
+  }
+}
