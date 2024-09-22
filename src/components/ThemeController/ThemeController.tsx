@@ -18,16 +18,23 @@ export const ThemeController = () => {
   }, [themePreference])
 
   const setTheme = () => {
+    setAnimation(false)
     setAnimation(true)
     
     if(themePreference == 'd') {
       localStorage.setItem('@theme', 'l')
-      setThemePreference('l')
+      // setThemePreference('l')
     } else {
       localStorage.setItem('@theme', 'd')
-      setThemePreference('d')
+      // setThemePreference('d')
     }
 
+    setTimeout(() => { // Timeout para trocar os ícones
+      setThemePreference(
+        localStorage.getItem('@theme')!
+      )
+    }, 300)
+    
     setTimeout(() => { // Timeout para animação rodar
       setAnimation(false)
     }, 1000)
