@@ -1,5 +1,6 @@
 import 'animate.css'
 import './styles/index.scss'
+import 'react-toastify/dist/ReactToastify.css';
 
 import { DefaultTemplate } from './components/DefaultTemplate/DefaultTemplate'
 import { BannerSection } from './components/BannerSection/BannerSection'

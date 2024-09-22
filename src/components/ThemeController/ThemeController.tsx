@@ -31,10 +31,7 @@ export const ThemeController = () => {
     setTimeout(() => { // Timeout para animação rodar
       setAnimation(false)
     }, 1000)
-  }
-
-  console.log(animation);
-  
+  }  
 
   return (
     <div className={`${styles.theme__controller} ${animation ? styles.animation : ''}`} onClick={setTheme}>

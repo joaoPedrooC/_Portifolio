@@ -62,8 +62,8 @@ export const Header = () => {
         <nav className={`${styles.header__mobile} ${open ? styles.modal__open : ''}`}>
           <ul>
             { HeaderMock.map(li => (
-              <li>
-                <a className='text text__small--1 font__black' href={li.href} key={li.sectionName}>{t(li.sectionName)}</a>
+              <li key={crypto.randomUUID()}>
+                <a className='text text__small--1 font__black' href={li.href}>{t(li.sectionName)}</a>
               </li>
             )) }
           </ul>
@@ -78,8 +78,8 @@ export const Header = () => {
         <nav className={styles.header__desktop}>
           <ul>
             { HeaderMock.map(li => (
-              <li className={styles.desktop__headerLi}>
-                <a className='text text__small--1 font__alternative' href={li.href} key={li.sectionName}>{t(li.sectionName)}</a>
+              <li key={crypto.randomUUID()} className={styles.desktop__headerLi}>
+                <a className='text text__small--1 font__alternative' href={li.href}>{t(li.sectionName)}</a>
               </li>
             )) }
           </ul>

@@ -27,4 +27,9 @@
     background-color: var(--font-color-1);
     color: var(--light-yellow);
   }
+
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
 }
