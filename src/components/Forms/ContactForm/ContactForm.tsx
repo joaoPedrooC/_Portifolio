@@ -41,10 +41,14 @@ export const ContactForm = () => {
       }
     })
     .then(() => {
-      toast.success('Recebi sua mensagem! Muito obrigado e em breve retornarei o contato 😁!')
+      toast.success('Recebi sua mensagem! Muito obrigado e em breve retornarei o contato 😁!', {
+        position: "bottom-right"
+      })
     })
     .catch(() => {
-      toast.error('Oops, algo deu errado... Por favor, tente novamente mais tarde!')
+      toast.error('Oops, algo deu errado... Por favor, tente novamente mais tarde!', {
+        position: "bottom-right"
+      })
     })
 
   }  
