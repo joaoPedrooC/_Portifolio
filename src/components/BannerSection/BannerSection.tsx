@@ -29,8 +29,8 @@ export const BannerSection = () => {
 
   return (
     <section className={styles.banner__section}>
-      <div className="container" ref={bannerRef}>
-        <div>
+      <div className="container">
+        <div ref={bannerRef}>
           <h1 className={`page__title font__alternative ${visible? 'animate__animated animate__fadeInLeft' : ''}`}>{ t('banner__title') }</h1>
           <p className={`text text__big--1 font__alternative ${visible ? 'animate__animated animate__fadeInLeft' : ''}`}>
             {t('banner__text')}

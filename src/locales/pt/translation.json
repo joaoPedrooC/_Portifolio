@@ -13,5 +13,9 @@
   "about__text--2": "Em 2024, iniciei meus estudos na Kenzie Academy Brasil, onde aprendi diversas tecnologias e soft skills. Também tive a oportunidade de atuar como Monitor de Ensino Full Stack, auxiliando outros alunos do curso com suas atividades e entregas. Desde então, tenho feito projetos pessoais como forma de praticar as tecnologias aprendidas e evoluir ainda mais!",
   "about__button": "Baixar currículo",
 
-  "technologies__title": "Tecnologias"
+  "technologies__title": "Tecnologias",
+
+  "contacts__title": "Contato",
+  "contacts__or": "OU",
+  "contacts__whatsapp": "Entre em contato comigo via WhatsApp"
 }

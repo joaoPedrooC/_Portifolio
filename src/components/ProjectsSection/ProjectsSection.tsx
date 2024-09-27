@@ -36,7 +36,6 @@ export const ProjectsSection = () => {
           </div>
         </div>
       </div>
-      <div className={styles.projects__sectionBackground}></div>
     </section>
   )
 }

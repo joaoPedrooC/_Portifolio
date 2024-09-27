@@ -1,9 +1,15 @@
 .about__section {
   position: relative;
-  padding: 7rem 0;
+  padding-block: 12rem;
 
   width: 100%;
   max-width: 100vw;
+
+  background-color: var(--light-yellow);
+
+  @media (width >= 695px) {
+    padding-block: 14rem;
+  }
 
   & > div:first-child {
     display: flex;
@@ -11,7 +17,7 @@
     align-items: center;
     justify-content: center;
 
-    min-height: 100vh;
+    // min-height: 100vh;
 
     text-indent: 1.5625rem;
 
@@ -41,20 +47,4 @@
 
 .about__section p {
   animation-delay: .3s;
-}
-
-.about__sectionBackground {
-  position: absolute;
-
-  left: -250%;
-  top: 100px;
-
-  width: 500%;
-  height: 90%;
-
-  background-color: var(--light-yellow);
-
-  transform: rotate(-6deg);
-
-  z-index: -1;
 }

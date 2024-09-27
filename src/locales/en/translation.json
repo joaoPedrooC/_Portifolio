@@ -13,5 +13,9 @@
   "about__text--2": "In 2024, I started studying at Kenzie Academy Brasil, where I've learned many technologies and 'soft skills'. I also had the oportunity to act as a Full Stack Monitor, helping other students from the course with their tasks and assignments. Since then, I've been doing personal projects as a way of practicing the technologies I learned and evolve even more.",
   "about__button": "Download CV",
 
-  "technologies__title": "Technologies"
+  "technologies__title": "Technologies",
+
+  "contacts__title": "Contact",
+  "contacts__or": "OR",
+  "contacts__whatsapp": "Contact me on WhatsApp"
 }

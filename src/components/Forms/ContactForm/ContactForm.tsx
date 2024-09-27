@@ -6,6 +6,7 @@ import styles from './styles.module.scss'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { ContactFormSchema } from './contactFormSchema'
 import { toast } from "react-toastify"
+import { useEffect, useRef, useState } from "react"
 
 interface IFormData {
   name: string
@@ -17,6 +18,19 @@ export const ContactForm = () => {
   const { handleSubmit, register, formState: { isValid } } = useForm<IFormData>({
     resolver: zodResolver(ContactFormSchema)
   })
+
+  const [visible, setVisible] = useState<boolean>(false)
+  const buttonRef = useRef<HTMLButtonElement>(null)
+
+  const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      setVisible(true)
+    }
+  }))
+
+  useEffect(() => {
+    observer.observe(buttonRef.current!)
+  }, [])
 
   const submit = async (formData: IFormData) => {
     await fetch('https://portifolio-db.onrender.com/', {
@@ -40,7 +54,7 @@ export const ContactForm = () => {
       <Input type="text" id="nome" label="Seu nome" {...register('name')} />
       <Input type="email" id="email" label="Seu e-mail" {...register('email')} />
       <Textarea label="Digite sua mensagem aqui" {...register('message')} />
-      <button type="submit" className="text__bold" disabled={!isValid}>Enviar mensagem</button>
+      <button type="submit" className={`text__bold ${visible ? 'animate__animated animate__slideInUp' : ''}`} disabled={!isValid} ref={buttonRef}>Enviar mensagem</button>
     </form>
   )
 }

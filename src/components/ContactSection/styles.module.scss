@@ -1,10 +1,7 @@
 .contact__section {
-  margin-top: 6rem;
-  padding: 3rem 0;
+  padding: 3.5rem 0;
 
   background-color: var(--light-yellow);
-
-  min-height: 100vh;
 
   & > div {
     display: flex;
@@ -20,6 +17,7 @@
   align-items: center;
 
   gap: 2rem;
+  
   @media (width >= 850px) {
     flex-direction: row;
     justify-content: space-between;

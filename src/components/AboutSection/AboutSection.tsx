@@ -28,7 +28,6 @@ export const AboutSection = () => {
         </div>
         <button type="button" className={visible ? 'animate__animated animate__fadeInUp animate__delay-1s' : ''}><a href="" download className='text text__big--2'>{t('about__button')}</a></button>
       </div>
-      <div className={styles.about__sectionBackground}></div>
     </section>
   )
 }
