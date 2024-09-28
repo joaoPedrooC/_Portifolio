@@ -15,6 +15,20 @@
 
   "technologies__title": "Technologies",
 
+  "projects__title": "Projects",
+  "projects__title--1": "Contacts",
+  "projects__description--1": "Application to register, update, delete and consult your contacts.",
+  "projects__title--2": "Burguer Shop",
+  "projects__description--2": "Application that simulates a burguer shop page.",
+  "projects__title--3": "KenzieHub",
+  "projects__description--3": "Application to register, delete and consult your registered technologies.",
+  "projects__title--4": "Contacts",
+  "projects__description--4": "Application to register, update, delete and consult your contacts.",
+  "projects__title--5": "Movies",
+  "projects__description--5": "Application that simulates a Rest API from a movie rental store.",
+  "projects__title--6": "User & Courses",
+  "projects__description--6": "Application that simulates a Rest API from a courses platform.",
+
   "achievements__title": "Achievements",
   "achievements__title--1": "20ᵗʰ Regional Coding Marathon",
   "achievements__description--1": "I attended the 20ᵗʰ Regional Coding Marathon in 2022, where I got one of the bronze medals from the high school level (Competition between the 1ˢᵗ to 3ʳᵈ years of the high school)",

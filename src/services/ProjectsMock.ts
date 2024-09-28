@@ -5,30 +5,30 @@ export interface IProjectsMock {
 
 export const frontEndProjects: Array<IProjectsMock> = [
   {
-    projectName: 'Contacts',
-    projectDescription: 'Aplicação para cadastrar, editar, excluir e visualizar seus contatos.'
+    projectName: 'projects__title--1',
+    projectDescription: 'projects__description--1'
   },
   {
-    projectName: 'Hamburgueria',
-    projectDescription: 'Aplicação que simula a página de uma hamburgueria.'
+    projectName: 'projects__title--2',
+    projectDescription: 'projects__description--2'
   },
   {
-    projectName: 'KenzieHub',
-    projectDescription: 'Aplicação para cadastrar, deletar e visualizar suas tecnologias cadastradas.'
+    projectName: 'projects__title--3',
+    projectDescription: 'projects__description--3'
   }
 ]
 
 export const backEndProjects: Array<IProjectsMock> = [
   {
-    projectName: 'Contacts',
-    projectDescription: 'Aplicação para cadastrar, editar, excluir e visualizar seus contatos.'
+    projectName: 'projects__title--4',
+    projectDescription: 'projects__description--4'
   },
   {
-    projectName: 'Movies',
-    projectDescription: 'Aplicação simula uma API Rest de uma locadora de filmes.'
+    projectName: 'projects__title--5',
+    projectDescription: 'projects__description--5'
   },
   {
-    projectName: 'User e Courses',
-    projectDescription: 'Aplicação simula uma API Rest de uma plataforma de cursos.'
+    projectName: 'projects__title--6',
+    projectDescription: 'projects__description--6'
   }
 ]

@@ -1,12 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
+import { useTranslation } from 'react-i18next'
+
 import { backEndProjects, frontEndProjects } from '../../services/ProjectsMock'
 import { ProjectsList } from './ProjectsList/ProjectsList'
-import styles from './styles.module.scss'
+
 import { TbHandClick, TbHandFinger } from 'react-icons/tb'
+
+import styles from './styles.module.scss'
 
 export const ProjectsSection = () => {
   const [visible, setVisible] = useState<boolean>(false)
   const projectsRef = useRef<HTMLHeadingElement>(null)
+
+  const { t } = useTranslation()
 
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -21,7 +27,7 @@ export const ProjectsSection = () => {
   return (
     <section className={styles.projects__section}>
       <div className='container'>
-        <h2 className={`section__title ${visible ? 'animate__animated animate__fadeInDown' : ''}`} ref={projectsRef}>Projetos</h2>
+        <h2 className={`section__title ${visible ? 'animate__animated animate__fadeInDown' : ''}`} ref={projectsRef}>{t('projects__title')}</h2>
         <TbHandFinger className={styles.mouse}/>
         <TbHandClick className={styles.mouse__click} />
 

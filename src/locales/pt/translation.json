@@ -15,6 +15,21 @@
 
   "technologies__title": "Tecnologias",
 
+  "projects__title": "Projetos",
+  "projects__title--1": "Contacts",
+  "projects__description--1": "Aplicação para cadastrar, editar, excluir e visualizar seus contatos.",
+  "projects__title--2": "Hamburgueria",
+  "projects__description--2": "Aplicação que simula a página de uma hamburgueria.",
+  "projects__title--3": "KenzieHub",
+  "projects__description--3": "Aplicação para cadastrar, deletar e visualizar suas tecnologias cadastradas.",
+  "projects__title--4": "Contacts",
+  "projects__description--4": "Aplicação para cadastrar, editar, excluir e visualizar seus contatos.",
+  "projects__title--5": "Movies",
+  "projects__description--5": "Aplicação simula uma API Rest de uma locadora de filmes.",
+  "projects__title--6": "User e Courses",
+  "projects__description--6": "Aplicação simula uma API Rest de uma plataforma de cursos.",
+
+
   "achievements__title": "Conquistas",
   "achievements__title--1": "20ª Maratona Regional de Programação",
   "achievements__description--1": "Participei da 20ª Maratona Regional de Programação em 2022, onde conquistei uma das medalhas de bronze do nível médio (competição entre os estudantes do 1° ao 3° ano do ensino médio)",
