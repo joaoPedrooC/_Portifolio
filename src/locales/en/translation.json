@@ -15,6 +15,18 @@
 
   "technologies__title": "Technologies",
 
+  "achievements__title": "Achievements",
+  "achievements__title--1": "20ᵗʰ Regional Coding Marathon",
+  "achievements__description--1": "I attended the 20ᵗʰ Regional Coding Marathon in 2022, where I got one of the bronze medals from the high school level (Competition between the 1ˢᵗ to 3ʳᵈ years of the high school)",
+  "achievements__title--2": "Maratona Tech",
+  "achievements__description--2": "I attended the first edition of the Maratona Tech in 2022, achieving the golden medal.",
+  "achievements__title--3": "Full Stack Formation",
+  "achievements__description--3": "As a reward from the Maratona Tech, I had the opportunity of studying Full Stack web development at Kenzie Academy Brazil. Between March 2023 and March 2024, I have dedicated to studies, learning plenty of different technologies.",
+  "achievements__title--4": "Recognizement - Outstanding student in the communication module.",
+  "achievements__description--4": "I attended the Talentos de Futuro program in 2021, wich I was voted as the outstanding student in the communication module, besides developing important skills, like teamwork, ethic and inovation.",
+
+  "button__marathon--content": "Know more about the Marathon",
+
   "contacts__title": "Contact",
   "contacts__or": "OR",
   "contacts__whatsapp": "Contact me on WhatsApp"

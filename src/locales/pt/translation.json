@@ -15,6 +15,18 @@
 
   "technologies__title": "Tecnologias",
 
+  "achievements__title": "Conquistas",
+  "achievements__title--1": "20ª Maratona Regional de Programação",
+  "achievements__description--1": "Participei da 20ª Maratona Regional de Programação em 2022, onde conquistei uma das medalhas de bronze do nível médio (competição entre os estudantes do 1° ao 3° ano do ensino médio)",
+  "achievements__title--2": "Maratona Tech",
+  "achievements__description--2": "Participei da primeira edição da Maratona Tech em 2022, conquistando a medalha de ouro.",
+  "achievements__title--3": "Formação Full Stack",
+  "achievements__description--3": "Como premiação da Maratona Tech, tive a oportunidade de estudar desenvolvimento web Full Stack na Kenzie Academy Brasil. Entre Março de 2023 e Março de 2024 me dediquei aos estudos, aprendendo diversas tecnologias.",
+  "achievements__title--4": "Reconhecimento - Aluno destaque módulo de comunicação",
+  "achievements__description--4": "Participei do programa Talentos de Futuro em 2021, em que fui eleito aluno destaque no módulo de comunicação, além de desenvolver habilidades importantes, como trabalho em equipe, ética e inovação.",
+
+  "button__marathon--content": "Saiba mais sobre a Maratona",
+
   "contacts__title": "Contato",
   "contacts__or": "OU",
   "contacts__whatsapp": "Entre em contato comigo via WhatsApp"

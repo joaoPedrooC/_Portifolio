@@ -13,27 +13,27 @@ export interface IAchievementsMock {
 
 export const AchievementsMock: Array<IAchievementsMock> = [
   {
-    achievementTitle: '20ª Maratona Regional de Programação',
-    achievementDescription: 'Participei da 20ª Maratona Regional de Programação em 2022, onde conquistei uma das medalhas de bronze do nível médio (competição entre os estudantes do 1° ao 3° ano do ensino médio)',
-    buttonContent: 'Saiba mais sobre a Maratona',
+    achievementTitle: 'achievements__title--1',
+    achievementDescription: 'achievements__description--1',
+    buttonContent: 'button__marathon--content',
     buttonUrl: 'https://algar-telecom-fic.github.io/websiteMaratonaRegional/',
     image: maratonaRegional
   },
   {
-    achievementTitle: 'Maratona Tech',
-    achievementDescription: 'Participei da primeira edição da Maratona Tech em 2022, conquistando a medalha de ouro.',
-    buttonContent: 'Saiba mais sobre a Maratona',
+    achievementTitle: 'achievements__title--2',
+    achievementDescription: 'achievements__description--2',
+    buttonContent: 'button__marathon--content',
     buttonUrl: 'https://acervodenoticias.educacao.mg.gov.br/politica-de-privacidade/story/12150-aluno-da-rede-estadual-de-minas-e-premiado-em-competicao-tecnologica-maratona-tech',
     image: maratonaTech
   },
   {
-    achievementTitle: 'Formação Full Stack',
-    achievementDescription: 'Como premiação da Maratona Tech, tive a oportunidade de estudar desenvolvimento web Full Stack na Kenzie Academy Brasil. Entre Março de 2023 e Março de 2024 me dediquei aos estudos, aprendendo diversas tecnologias.',
+    achievementTitle: 'achievements__title--3',
+    achievementDescription: 'achievements__description--3',
     image: certificadoKenzie
   },
   {
-    achievementTitle: 'Reconhecimento - Aluno destaque módulo de comunicação',
-    achievementDescription: 'Participei do programa Talentos de Futuro em 2021, em que fui eleito aluno destaque no módulo de comunicação, além de desenvolver habilidades importantes, como trabalho em equipe, ética e inovação.',
+    achievementTitle: 'achievements__title--4',
+    achievementDescription: 'achievements__description--4',
     image: talentosDeFuturo
   },
 ]
