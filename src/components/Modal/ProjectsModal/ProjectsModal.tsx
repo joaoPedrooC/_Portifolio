@@ -34,14 +34,14 @@ export const ProjectsModal = ({ project, setOpen }: IProjectsModalProps) => {
             <p>{t(project.projectDescription)}</p>
           </div>
           <div className={styles.modal__links}>
-            <a href="" className="button__links text text__small--1">
+            <a href={project.sourceCode} className="button__links text text__small--1" target="_blank">
               <PiGithubLogoLight />
               {t('projects__button--code')}
             </a>
-            <a href="" className="button__links text text__small--1">
+            { project.deployUrl && <a href={project.deployUrl} className="button__links text text__small--1" target="_blank">
               <CgVercel />
               {t('projects__button--deploy')}
-            </a>
+            </a> }
           </div>
         </div>
       </div>
