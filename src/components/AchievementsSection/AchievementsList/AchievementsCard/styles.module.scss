@@ -33,23 +33,15 @@
   }
 
   & a {
-    background-color: transparent;
-
     padding: 1rem 2rem;
     width: 90%;
 
-    text-align: center;
+    justify-content: center;
 
-    border: 1px solid var(--font-color-2);
     border-radius: 8px;
-
-    cursor: pointer;
-
-    transition: .6s ease background-color;
 
     &:hover {
       background-color: var(--scroll-color);
-
       color: var(--links-color);
     }
   }

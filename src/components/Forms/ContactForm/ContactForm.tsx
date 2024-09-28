@@ -61,7 +61,7 @@ export const ContactForm = () => {
       <Input type="text" id="nome" label={t('contacts__input--name')} {...register('name')} />
       <Input type="email" id="email" label={t('contacts__input--email')} {...register('email')} />
       <Textarea label={t('contacts__textarea')} {...register('message')} />
-      <button type="submit" className={`text__bold ${visible ? 'animate__animated animate__slideInUp' : ''}`} disabled={!isValid} ref={buttonRef}>{t('contacts__button--send')}</button>
+      <button type="submit" className={`text__bold ${visible ? 'animate__animated animate__slideInUp button__links' : ''}`} disabled={!isValid} ref={buttonRef}>{t('contacts__button--send')}</button>
     </form>
   )
 }

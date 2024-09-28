@@ -26,7 +26,7 @@ export const AboutSection = () => {
           <p className={`text text__big--1 ${visible ? 'animate__animated animate__fadeIn' : ''}`} ref={aboutRef}>{t('about__text--1')}</p>
           <p className={`text text__big--1 ${visible ? 'animate__animated animate__fadeIn' : ''}`}>{t('about__text--2')}</p>
         </div>
-        <button type="button" className={visible ? 'animate__animated animate__fadeInUp animate__delay-1s' : ''}><a href="" download className='text text__big--2'>{t('about__button')}</a></button>
+        <button type="button" className={visible ? 'animate__animated animate__fadeInUp animate__delay-1s button__links' : ''}><a href="" download className='text text__big--2'>{t('about__button')}</a></button>
       </div>
     </section>
   )
