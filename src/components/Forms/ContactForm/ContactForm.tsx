@@ -7,6 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { ContactFormSchema } from './contactFormSchema'
 import { toast } from "react-toastify"
 import { useEffect, useRef, useState } from "react"
+import { useTranslation } from "react-i18next"
 
 interface IFormData {
   name: string
@@ -21,6 +22,8 @@ export const ContactForm = () => {
 
   const [visible, setVisible] = useState<boolean>(false)
   const buttonRef = useRef<HTMLButtonElement>(null)
+
+  const { t } = useTranslation()
 
   const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -41,12 +44,12 @@ export const ContactForm = () => {
       }
     })
     .then(() => {
-      toast.success('Recebi sua mensagem! Muito obrigado e em breve retornarei o contato 😁!', {
+      toast.success(t('contacts__message--success'), {
         position: "bottom-right"
       })
     })
     .catch(() => {
-      toast.error('Oops, algo deu errado... Por favor, tente novamente mais tarde!', {
+      toast.error(t('contacts__message--error'), {
         position: "bottom-right"
       })
     })
@@ -55,10 +58,10 @@ export const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit(submit)} className={styles.contact__formContainer}>
-      <Input type="text" id="nome" label="Seu nome" {...register('name')} />
-      <Input type="email" id="email" label="Seu e-mail" {...register('email')} />
-      <Textarea label="Digite sua mensagem aqui" {...register('message')} />
-      <button type="submit" className={`text__bold ${visible ? 'animate__animated animate__slideInUp' : ''}`} disabled={!isValid} ref={buttonRef}>Enviar mensagem</button>
+      <Input type="text" id="nome" label={t('contacts__input--name')} {...register('name')} />
+      <Input type="email" id="email" label={t('contacts__input--email')} {...register('email')} />
+      <Textarea label={t('contacts__textarea')} {...register('message')} />
+      <button type="submit" className={`text__bold ${visible ? 'animate__animated animate__slideInUp' : ''}`} disabled={!isValid} ref={buttonRef}>{t('contacts__button--send')}</button>
     </form>
   )
 }

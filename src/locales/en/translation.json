@@ -29,5 +29,14 @@
 
   "contacts__title": "Contact",
   "contacts__or": "OR",
-  "contacts__whatsapp": "Contact me on WhatsApp"
+  "contacts__whatsapp": "Contact me on WhatsApp",
+
+  "contacts__input--name": "Your name",
+  "contacts__input--email": "Your e-mail",
+  "contacts__textarea": "Type your message here",
+
+  "contacts__button--send": "Send message",
+
+  "contacts__message--success": "I have received your message! Thank you and I'll text you back soon 😁!",
+  "contacts__message--error": "Oops, something went wrong... Please, try again later!"
 }

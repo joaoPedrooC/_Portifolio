@@ -29,5 +29,14 @@
 
   "contacts__title": "Contato",
   "contacts__or": "OU",
-  "contacts__whatsapp": "Entre em contato comigo via WhatsApp"
+  "contacts__whatsapp": "Entre em contato comigo via WhatsApp",
+
+  "contacts__input--name": "Seu nome",
+  "contacts__input--email": "Seu e-mail",
+  "contacts__textarea": "Digite sua mensagem aqui",
+
+  "contacts__button--send": "Enviar mensagem",
+
+  "contacts__message--success": "Recebi sua mensagem! Muito obrigado e em breve retornarei o contato 😁!",
+  "contacts__message--error": "Oops, algo deu errado... Por favor, tente novamente mais tarde!"
 }
