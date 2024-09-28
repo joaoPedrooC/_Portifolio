@@ -5,6 +5,8 @@
 
   background-color: var(--light-yellow);
 
+  position: relative;
+
   & > div:first-child {
     display: flex;
     flex-direction: column;

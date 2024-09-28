@@ -29,6 +29,9 @@
   "projects__title--6": "User & Courses",
   "projects__description--6": "Application that simulates a Rest API from a courses platform.",
 
+  "projects__button--code": "Access source code",
+  "projects__button--deploy": "Access deploy on vercel",
+
   "achievements__title": "Achievements",
   "achievements__title--1": "20ᵗʰ Regional Coding Marathon",
   "achievements__description--1": "I attended the 20ᵗʰ Regional Coding Marathon in 2022, where I got one of the bronze medals from the high school level (Competition between the 1ˢᵗ to 3ʳᵈ years of the high school)",

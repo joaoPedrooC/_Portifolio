@@ -29,6 +29,8 @@
   "projects__title--6": "User e Courses",
   "projects__description--6": "Aplicação simula uma API Rest de uma plataforma de cursos.",
 
+  "projects__button--code": "Acessar código fonte",
+  "projects__button--deploy": "Acessar deploy no vercel",
 
   "achievements__title": "Conquistas",
   "achievements__title--1": "20ª Maratona Regional de Programação",

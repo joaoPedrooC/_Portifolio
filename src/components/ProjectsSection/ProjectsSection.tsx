@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import { backEndProjects, frontEndProjects } from '../../services/ProjectsMock'
+import { backEndProjects, frontEndProjects, IProjectsMock } from '../../services/ProjectsMock'
 import { ProjectsList } from './ProjectsList/ProjectsList'
 
 import { TbHandClick, TbHandFinger } from 'react-icons/tb'
 
 import styles from './styles.module.scss'
+import { ProjectsModal } from '../Modal/ProjectsModal/ProjectsModal'
 
 export const ProjectsSection = () => {
+  const [open, setOpen] = useState<null | IProjectsMock>(null)
   const [visible, setVisible] = useState<boolean>(false)
   const projectsRef = useRef<HTMLHeadingElement>(null)
 
@@ -34,14 +36,15 @@ export const ProjectsSection = () => {
         <div className={styles.section__cardsContainer}>
           <div>
             <span className={`text text__medium font__black ${visible ? 'animate__animated animate__fadeIn' : ''}`}>Font-end</span>
-            <ProjectsList projectsList={frontEndProjects} visible={visible} />
+            <ProjectsList setOpen={setOpen} projectsList={frontEndProjects} visible={visible} />
           </div>
           <div>
             <span className={`text text__medium font__black ${visible ? 'animate__animated animate__fadeIn' : ''}`}>Back-end</span>
-            <ProjectsList projectsList={backEndProjects} visible={visible} />
+            <ProjectsList setOpen={setOpen} projectsList={backEndProjects} visible={visible} />
           </div>
         </div>
       </div>
+      { open && <ProjectsModal project={open} setOpen={setOpen} />}
     </section>
   )
 }
