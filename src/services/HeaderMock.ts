@@ -10,22 +10,22 @@ export const HeaderMock: Array<IHeaderMock> = [
   },
   {
     sectionName: 'header__about',
-    href: '#about'
+    href: 'about'
   },
   {
     sectionName: 'header__techs',
-    href: '#techs'
+    href: 'techs'
   },
   {
     sectionName: 'header__projects',
-    href: '#projects'
+    href: 'projects'
   },
   {
     sectionName: 'header__achievements',
-    href: '#achievements'
+    href: 'achievements'
   },
   {
     sectionName: 'header__contact',
-    href: '#contact'
+    href: 'contact'
   }
 ]

@@ -17,7 +17,7 @@ export const AchievementsSection = () => {
   }, [])
 
   return (
-    <section className={styles.achievements__section}>
+    <section className={styles.achievements__section} id='achievements'>
       <div className='container'>
         <h2 className={`section__title font__alternative ${visible ? 'animate__animated animate__fadeInDown' : ''}`} ref={achievementsRef}>Conquistas</h2>
         <AchievementsList />

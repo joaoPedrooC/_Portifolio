@@ -142,8 +142,12 @@
     pointer-events: none;
   }
 
-  & > li, & > div > div, & a {
+  & > li, & > div > div, & a, & span {
     pointer-events: all;
+  }
+
+  & span {
+    cursor: pointer;
   }
 
   @media (width >= 1020px) {
@@ -177,6 +181,8 @@
 
 .desktop__headerLi {
   position: relative;
+
+  cursor: pointer;
 
   &::after {
     position: absolute;

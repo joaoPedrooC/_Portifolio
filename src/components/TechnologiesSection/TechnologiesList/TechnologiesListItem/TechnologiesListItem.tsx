@@ -12,7 +12,6 @@ export const TechnologiesListItem = ({ technology: { Icon, name }, index, visibl
   return (
     <li className={`${styles.item__container} ${visible? 'animate__animated animate__fadeInDown' : ''}`} style={{
       animationDelay: `${index*15}ms`,
-      display: visible ? 'flex' : 'none'
     }}>
       <Icon />
       <span className='text text__small--2 font__alternative'>{name}</span>

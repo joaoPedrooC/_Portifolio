@@ -27,7 +27,7 @@ export const ProjectsSection = () => {
   }, [])
 
   return (
-    <section className={styles.projects__section}>
+    <section className={styles.projects__section} id='projects'>
       <div className='container'>
         <h2 className={`section__title ${visible ? 'animate__animated animate__fadeInDown' : ''}`} ref={projectsRef}>{t('projects__title')}</h2>
         <TbHandFinger className={styles.mouse}/>

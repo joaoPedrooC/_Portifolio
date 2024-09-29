@@ -28,6 +28,13 @@ export const Header = () => {
     setOpen(prevState => !prevState)
   }
 
+  const handleScrollIntoView = (e: any) => {
+    setOpen(false)
+    
+    const section = document.querySelector(`section[id="${e.target.getAttribute('aria-valuetext')}"]`);
+    section?.scrollIntoView({ behavior: 'smooth', inline: 'start' })
+  }
+
   const headerRef = useRef<HTMLHeadElement>(null)
   let scrollHeight = 0
 
@@ -38,6 +45,7 @@ export const Header = () => {
       headerRef.current!.style.opacity = "0"
       headerRef.current!.style.width = "200%"
       scrollHeight = currentScrollHeight
+      setOpen(false)
     } else {
       headerRef.current!.style.width = "100%"
       headerRef.current!.style.opacity = "1"
@@ -62,8 +70,8 @@ export const Header = () => {
         <nav className={`${styles.header__mobile} ${open ? styles.modal__open : ''}`}>
           <ul>
             { HeaderMock.map(li => (
-              <li key={crypto.randomUUID()}>
-                <a className='text text__small--1 font__black' href={li.href}>{t(li.sectionName)}</a>
+              <li key={crypto.randomUUID()} onClick={(e) => handleScrollIntoView(e)}>
+                <span className='text text__small--1 font__black' aria-valuetext={li.href}>{t(li.sectionName)}</span>
               </li>
             )) }
           </ul>
@@ -78,8 +86,8 @@ export const Header = () => {
         <nav className={styles.header__desktop}>
           <ul>
             { HeaderMock.map(li => (
-              <li key={crypto.randomUUID()} className={styles.desktop__headerLi}>
-                <a className='text text__small--1 font__alternative' href={li.href}>{t(li.sectionName)}</a>
+              <li key={crypto.randomUUID()} className={styles.desktop__headerLi} onClick={(e) => handleScrollIntoView(e)}>
+                <span className='text text__small--1 font__black' aria-valuetext={li.href}>{t(li.sectionName)}</span>
               </li>
             )) }
           </ul>

@@ -25,7 +25,7 @@ export const ProjectsList = ({ projectsList, visible, setOpen }: IProjectsListPr
 
   return (
     <ul className={styles.list__container} ref={ulRef}>
-      {projectsList.map((project, index) => visible ? <ProjectsCard setOpen={setOpen} project={project} delay={index * 50} key={index} /> : null)}
+      {projectsList.map((project, index) => <ProjectsCard setOpen={setOpen} project={project} delay={index * 50} key={index} visible={visible} /> )}
     </ul>
   )
 }

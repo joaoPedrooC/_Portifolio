@@ -23,7 +23,7 @@ export const ContactSection = () => {
   }, [])
 
   return (
-    <section className={styles.contact__section}>
+    <section className={styles.contact__section} id='contact'>
       <div className="container" ref={contactRef}>
         <h1 className={`section__title font__black ${visible ? 'animate__animated animate__fadeInDown' : ''}`}>{t('contacts__title')}</h1>
         <div className={styles.form__divisor}>

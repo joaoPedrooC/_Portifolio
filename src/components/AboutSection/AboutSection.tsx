@@ -20,7 +20,7 @@ export const AboutSection = () => {
   }, [])
 
   return (
-    <section className={styles.about__section}>
+    <section className={styles.about__section} id='about'>
       <div className="container">
         <div>
           <p className={`text text__big--1 ${visible ? 'animate__animated animate__fadeIn' : ''}`} ref={aboutRef}>{t('about__text--1')}</p>
