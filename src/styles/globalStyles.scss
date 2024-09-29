@@ -26,12 +26,12 @@
 
 body {
   background-color: var(--background-color);
-  overflow-x: hidden;
 
   transition: background-color 1s ease;
 
   &::-webkit-scrollbar {
     width: 5px;
+    height: 1px;
     background-color: var(--background-color);
 
     transition: 1s ease;
@@ -44,9 +44,4 @@ body {
 
     transition: 1s ease;
   }
-}
-
-html {
-  overflow-x: hidden;
-  width: 100vw;
 }
