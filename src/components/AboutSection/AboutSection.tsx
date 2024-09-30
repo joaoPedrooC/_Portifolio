@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import cv from '../../assets/pdf/cv-joao-pedro.pdf'
+import cv from '../../assets/pdf/cv.pdf'
 
 import styles from './styles.module.scss'
 
