@@ -17,25 +17,31 @@
   position: relative;
 }
 
-.select__optionsContainer {
+.form__container {
   display: none;
-  background-color: var(--light-yellow);
-  position: absolute;
 
-  bottom: -100px;
+  position: absolute;
+  
+  bottom: -125px;
   left: 0;
 
-  border-radius: 4px;
+  padding: 1rem 0;
+}
 
+.select__optionsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-yellow);
+  
+  border-radius: 4px;
+  
   & > input {
     display: none;
   }
 }
 
-.select__container:hover > .select__optionsContainer {
-  display: flex;
-  flex-direction: column;
-
+.select__container:hover > .form__container {
+  display: inherit;
   animation: show .5s ease;
 }
 

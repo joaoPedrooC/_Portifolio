@@ -18,12 +18,14 @@ export const CustomSelect = () => {
       <span className='text text__small--2' id='lang'>{i18n.language.toUpperCase()}</span>
       <IoIosArrowDown />
 
-        <form className={styles.select__optionsContainer}>
-          <input type="radio" name="languageValue" id="PT" value="pt" onChange={changeInputValue} />
-          <label htmlFor="PT" className='text text__small-1 font__black'>Português</label>
-          <input type="radio" name="languageValue" id="EN" value="en" onChange={changeInputValue} />
-          <label htmlFor="EN" className='text text__small-1 font__black'>English</label>
-        </form>
+        <div className={styles.form__container}>
+          <form className={styles.select__optionsContainer}>
+            <input type="radio" name="languageValue" id="PT" value="pt" onChange={changeInputValue} />
+            <label htmlFor="PT" className='text text__small-1 font__black'>Português</label>
+            <input type="radio" name="languageValue" id="EN" value="en" onChange={changeInputValue} />
+            <label htmlFor="EN" className='text text__small-1 font__black'>English</label>
+          </form>
+        </div>
       </div>
   )
 }
