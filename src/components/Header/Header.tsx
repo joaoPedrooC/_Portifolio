@@ -87,7 +87,7 @@ export const Header = () => {
           <ul>
             { HeaderMock.map(li => (
               <li key={crypto.randomUUID()} className={styles.desktop__headerLi} onClick={(e) => handleScrollIntoView(e)}>
-                <span className='text text__small--1 font__black' aria-valuetext={li.href}>{t(li.sectionName)}</span>
+                <span className='text text__small--1 font__alternative' aria-valuetext={li.href}>{t(li.sectionName)}</span>
               </li>
             )) }
           </ul>
